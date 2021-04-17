@@ -18,5 +18,5 @@ def do_pack():
     createArchive = local('tar -cvzf {} web_static/'.format(filePath))
 
     if createArchive.succeeded:
-        return archive_path
+        return filePath
     return None
